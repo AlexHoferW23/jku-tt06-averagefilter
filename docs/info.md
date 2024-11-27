@@ -107,7 +107,7 @@ The FSM ensures synchronized data processing aligned with incoming strobe signal
      - `11`: Extended window size (8+2)
 
 3. **Operation:**
-   - Provide input data through `ui_in` and 'uio_out[3:2]`
+   - Provide input data through `ui_in` and `uio_out[3:2]`
    - Provide input strobe when data is valid through uio_out[0].
    - Ensure the `clk` and `rst_n` signals are properly connected.
    - Monitor the filtered output on `uo_out` and `uio_out[5:4]`.
