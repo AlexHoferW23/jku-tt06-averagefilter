@@ -49,7 +49,7 @@ This module implements the moving average filter logic. It processes incoming da
 
 #### Filter Configuration
 
-The filter window size is determined by the `FILTER_POWER` parameter, where the window size is \(2^{\text{FILTER_POWER}}\). The master module instantiates multiple `tt_um_moving_average` modules with different `FILTER_POWER` values to support various window sizes:
+The filter window size is determined by the `FILTER_POWER` parameter, where the window size is 2^`FILTER_POWER`. The master module instantiates multiple `tt_um_moving_average` modules with different `FILTER_POWER` values to support various window sizes:
 
 - **Window Size 2:** `FILTER_POWER = 1`
 - **Window Size 4:** `FILTER_POWER = 2`
